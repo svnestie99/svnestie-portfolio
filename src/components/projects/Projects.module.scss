@@ -1,0 +1,417 @@
+$Roboto: Roboto Mono, monospace;
+$DrukWide: 'Druk Wide';
+$purple: #682ae9;
+
+.projects_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  max-width: 1450px;
+  min-width: 550px;
+  margin-top: 200px;
+  padding: 30px 50px;
+
+  .projects_row {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -40px;
+    white-space: nowrap;
+    transform: translateX(-150%);
+
+    span {
+      font-family: $DrukWide;
+      font-size: 100px;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 0.02em #fff;
+
+      span {
+        color: #fff;
+        -webkit-text-stroke: 0em #fff;
+      }
+    }
+  }
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-family: $DrukWide;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 0.02em $purple;
+    transition: 0.8s;
+    max-width: 50%;
+  }
+}
+.switcher_block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 100px;
+  border-bottom: 2px solid $purple;
+  border-top: 2px solid $purple;
+
+  p {
+    font-family: $Roboto;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .toogle_btn {
+    cursor: pointer;
+    font-family: $Roboto;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+
+    &:hover {
+      border: 2px solid $purple;
+      padding: 8px 18px;
+    }
+  }
+
+  .active {
+    border: 2px solid $purple;
+    color: $purple;
+    padding: 8px 18px;
+  }
+}
+
+.projects_grid_container {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+}
+
+.projects_list_container {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.active {
+  display: flex;
+}
+
+.project_grid_block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 600px;
+  max-width: 600px;
+  margin-top: 150px;
+  animation: showY 1.2s forwards;
+
+  .project_image_item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+
+    &:hover {
+      .project_grid_links {
+        height: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+
+        a {
+          display: flex;
+          font-size: 10px;
+          font-family: $Roboto;
+          font-weight: 700;
+
+          width: 80px;
+          height: 80px;
+
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+
+          text-align: center;
+
+          text-decoration: none;
+          letter-spacing: 1.8px;
+
+          border-radius: 50%;
+          margin: 30px;
+          color: #fff;
+          background-color: #000;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+            color: $purple;
+            transition: 0.3s;
+          }
+
+          &:nth-child(2) {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .project_grid_links {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0%;
+    z-index: 1111;
+    left: 0;
+    transition: 0.6s;
+    bottom: 0;
+
+    a {
+      display: none;
+    }
+  }
+
+  .project_grid_info {
+    position: relative;
+    padding-top: 20px;
+
+    .info_item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $DrukWide;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 1.8px;
+    }
+
+    .project_tools {
+      display: flex;
+      padding-top: 20px;
+    }
+    .info_type {
+      font-size: 12px;
+      font-family: $Roboto;
+      font-weight: 700;
+      color: #fff;
+    }
+    .tool {
+      font-size: 11px;
+      font-family: $Roboto;
+      font-weight: 700;
+      color: #fff;
+      opacity: 0.6;
+      padding: 0px 10px 5px 0px;
+    }
+
+    span {
+      font-size: 15px;
+      color: $purple;
+      padding: 0px 0px 0px 40px;
+    }
+  }
+
+  img {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  &:nth-child(even) {
+    margin-left: auto;
+  }
+}
+
+.project_list {
+  opacity: 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  margin-top: -2px;
+  padding: 10px;
+  border: 2px solid #fff;
+  animation: showY 1.2s forwards;
+  &:nth-child(1) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+
+  .project_list_number {
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    color: $purple;
+    width: 5%;
+  }
+  .project_list_name {
+    display: flex;
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #fff;
+    width: 20%;
+  }
+  .project_list_type {
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    color: gray;
+    width: 20%;
+  }
+  .project_list_tools {
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: $Roboto;
+    color: #fff;
+    width: 20%;
+    margin-right: 50px;
+    .tool {
+      padding: 10px;
+      color: #fff;
+    }
+  }
+
+  .row {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    background-color: #fff;
+    padding: 0px 30px;
+
+    span {
+      opacity: 0;
+      font-family: $DrukWide;
+      text-transform: uppercase;
+      transition: 0.5s;
+      color: #000;
+    }
+
+    .row_links {
+      display: flex;
+      width: 30%;
+      opacity: 0;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 50px;
+
+      a {
+        font-family: $DrukWide;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s;
+        &:hover {
+          color: $purple;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  &:hover {
+    .row {
+      height: 100%;
+      transition: 0.5s;
+    }
+    span {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    .row_links {
+      opacity: 1;
+    }
+  }
+}
+.projects_element {
+  width: 100%;
+  position: relative;
+  margin-top: 150px;
+  padding: 30px 0px;
+
+  p {
+    position: absolute;
+    right: 0;
+    font-family: $Roboto;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #682ae9;
+  }
+}
+
+@keyframes showY {
+  0% {
+    opacity: 0;
+    transform: translate(0, 150%) rotate(4deg) scaleY(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0%) scaleY(1);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .projects_container .row .row_links {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .projects_container .projects_row span {
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .projects_container .projects_row span {
+    font-size: 65px;
+    line-height: 50px;
+  }
+  .projects_container .row  {
+    font-size: 12px;
+  }
+  .projects_container .row .row_links a{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .project_list {
+    padding: 0px 50px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .projects_container .projects_row span {
+    font-size: 50px;
+  }
+}

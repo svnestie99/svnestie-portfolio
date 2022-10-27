@@ -1,0 +1,57 @@
+$purple: #682ae9;
+$Roboto: Roboto Mono, monospace;
+.App {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  min-width: 578px;
+
+  background-color: #0d0d0d;
+  overflow: hidden;
+  
+  .active {
+    opacity: 1;
+    transition: 0.8s;
+  }
+}
+.Main-pages {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1450px;
+  min-width: 578px;
+  min-height: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+  
+}
+.app-logo {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
+  width: 100%;
+  
+  pointer-events: none;
+  
+  font-family: $Roboto;
+  font-size: 14px;
+
+  top: 100px;
+  left: 50px;
+
+  color: #fff;
+  z-index: 2111;
+  transition: 0.8s;
+
+  span {
+    color: #682ae9;
+  }
+}
+
+// @media screen and (max-width: 1600px) {
+//   .Main-pages {
+//     max-width: 1250px;
+//   }
+// }

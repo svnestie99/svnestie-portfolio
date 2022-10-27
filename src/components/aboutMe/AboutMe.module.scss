@@ -1,0 +1,189 @@
+$Roboto: Roboto Mono, monospace;
+$DrukWide: 'Druk Wide';
+$purple: #682ae9;
+
+.aboutme_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  max-width: 1450px;
+  margin-top: 200px;
+  padding: 30px 50px;
+
+  .aboutme_row {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -40px;
+    white-space: nowrap;
+    transform: translateX(-50vw);
+
+    span {
+      position: relative;
+      text-transform: uppercase;
+      font-family: $DrukWide;
+      font-size: 100px;
+      color: transparent;
+      -webkit-text-stroke: 0.02em #fff;
+      line-height: 85px;
+      padding: 0px 10px;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .aboutme_section {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    min-height: 50vh;
+    border-top: 3px solid $purple;
+    margin-top: 50px;
+
+    .aboutme_item {
+      display: flex;
+      flex-direction: column;
+      max-width: 120px;
+      max-height: 120px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+      span {
+        position: relative;
+        font-size: 18px;
+        font-family: $DrukWide;
+        font-style: italic;
+        text-transform: uppercase;
+        color: $purple;
+
+        &:nth-child(2) {
+          color: #fff;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+    .aboutme_item_2 {
+      width: 50%;
+      padding: 65px 0px;
+
+      p {
+        font-family: $Roboto;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 0px;
+        color: #fff;
+      }
+    }
+
+    .about_img_block {
+      display: flex;
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      top: 125px;
+
+      img {
+        pointer-events: none;
+        position: relative;
+        width: 60%;
+      }
+    }
+  }
+
+  .connection_block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+      font-family: $Roboto;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1.2px;
+    }
+
+    .contact_icon {
+      font-size: 20px;
+    }
+
+    .contact_block {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      align-items: center;
+      width: 350px;
+      height: 50px;
+
+      padding: 0px 10px;
+      transition: 0.5s;
+      border-bottom: 1px solid #fff;
+
+      &:hover {
+        transition: 0.5s;
+        background-color: #fff;
+        padding: 0px 40px;
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .aboutme_container .aboutme_row span {
+    font-size: 80px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .aboutme_section {
+    flex-direction: column;
+  }
+
+  .aboutme_container .connection_block {
+    align-items: center;
+  }
+
+  .aboutme_container .aboutme_section .aboutme_item_2 {
+    width: 100%;
+    padding: 10px 50px;
+  }
+
+  .aboutme_container .aboutme_section .about_img_block {
+    width: 100%;
+    top: 0px;
+    padding: 50px;
+    img {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .aboutme_container .aboutme_row span {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .aboutme_container .aboutme_row {
+    transform: translateX(-55vw);
+  }
+}
+@media screen and (max-width: 680px) {
+  .aboutme_container .aboutme_row span {
+    font-size: 40px;
+  }
+  .aboutme_container .aboutme_row {
+    transform: translateX(-65vw);
+  }
+}

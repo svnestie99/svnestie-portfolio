@@ -1,0 +1,265 @@
+$Roboto: Roboto Mono, monospace;
+$DrukWide: 'Druk Wide';
+$purple: #682ae9;
+
+.skills_container {
+  position: relative;
+  height: 100vh;
+  max-width: 1450px;
+  min-width: 550px;
+  margin-top: 200px;
+  padding: 30px 50px;
+
+  .skills_row {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -40px;
+    white-space: nowrap;
+    transform: translateX(-150%);
+    margin-top: 30px;
+
+    span {
+      font-family: $DrukWide;
+      font-size: 100px;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 0.02em #fff;
+      line-height: 85px;
+
+      span {
+        color: #fff;
+        -webkit-text-stroke: 0em #fff;
+      }
+    }
+  }
+
+  .skills_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    min-width: 600px;
+
+    margin-top: 100px;
+    padding: 0px 20px;
+    z-index: 1111;
+
+    p {
+      font-family: $Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .notification_block {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 52px;
+    }
+
+    .notification {
+      opacity: 0;
+      pointer-events: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      left: 100px;
+      height: 50px;
+      padding: 10px;
+
+      align-items: center;
+      width: 0px;
+
+      font-family: $Roboto;
+
+      color: #000;
+      background-color: #fff;
+      -webkit-text-stroke: 0em #fff;
+
+      transition: 0.8s;
+      .notification_icon {
+        font-size: 24px;
+      }
+    }
+
+    .active {
+      opacity: 1;
+      width: 350px;
+      transition: 0.8s;
+    }
+
+    .notification_btn {
+      cursor: pointer;
+      display: flex;
+      font-family: $Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      width: 100px;
+      height: 50px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #fff;
+
+      color: #fff;
+      transition: 0.5s;
+      &:hover {
+        color: $purple;
+        transition: 0.5s;
+      }
+    }
+
+    .skills_items_block {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      width: 100%;
+      max-height: 800px;
+      margin: 50px 20px;
+    }
+    .skill {
+      cursor: pointer;
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 180px;
+      height: 60px;
+      z-index: 1111;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        background-color: #fff;
+        transition: 0.6s;
+      }
+      &:hover::before {
+        height: 100%;
+        transition: 0.6s;
+      }
+
+      p {
+        font-family: $Roboto;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        color: $purple;
+        z-index: 1111;
+      }
+      .level {
+        display: none;
+      }
+      &:hover {
+        .level {
+          display: block;
+          color: #000;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .languages_items_block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 100px 20px;
+
+    .language {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+
+      p {
+        font-family: $Roboto;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 10px 0px;
+        color: #fff;
+        z-index: 1111;
+        span {
+          font-family: $Roboto;
+          color: #682ae9;
+          font-size: 14px;
+          padding: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .skills_images_block {
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    right: 0%;
+    top: 25%;
+
+    img {
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+      z-index: 2;
+    }
+
+    span {
+      position: absolute;
+      font-size: 90px;
+      font-family: $DrukWide;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 2px $purple;
+      z-index: 1;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .skills_container  .skills_row span {
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .skills_container  .skills_row span  {
+    font-size: 65px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .skills_container .skills_block {
+    width: 100%;
+  }
+  .skills_container .skills_images_block {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .skills_container  .skills_row span  {
+    font-size: 50px;
+  }
+}
