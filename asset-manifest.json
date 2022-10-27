@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/svnestie-portfolio/static/css/main.9d99e643.css",
+    "main.css": "/svnestie-portfolio/static/css/main.4850dc9c.css",
     "main.js": "/svnestie-portfolio/static/js/main.e3548e8b.js",
     "static/js/787.749b4a44.chunk.js": "/svnestie-portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/gif-anime-9039s-Favim.com-7259958.gif": "/svnestie-portfolio/static/media/gif-anime-9039s-Favim.com-7259958.04815a76b154f516b96c.gif",
@@ -13,12 +13,12 @@
     "static/media/Druk Wide Bold.woff": "/svnestie-portfolio/static/media/Druk Wide Bold.df0e260ed75efb70a10b.woff",
     "static/media/react.png": "/svnestie-portfolio/static/media/react.f3612a9a60364ffd8e8d.png",
     "index.html": "/svnestie-portfolio/index.html",
-    "main.9d99e643.css.map": "/svnestie-portfolio/static/css/main.9d99e643.css.map",
+    "main.4850dc9c.css.map": "/svnestie-portfolio/static/css/main.4850dc9c.css.map",
     "main.e3548e8b.js.map": "/svnestie-portfolio/static/js/main.e3548e8b.js.map",
     "787.749b4a44.chunk.js.map": "/svnestie-portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d99e643.css",
+    "static/css/main.4850dc9c.css",
     "static/js/main.e3548e8b.js"
   ]
 }
