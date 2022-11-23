@@ -4,7 +4,7 @@ $Roboto: Roboto Mono, monospace;
   display: flex;
   position: relative;
   max-width: 100%;
-  min-width: 578px;
+  min-width: 575px;
 
   background-color: #0d0d0d;
   overflow: hidden;
@@ -19,7 +19,7 @@ $Roboto: Roboto Mono, monospace;
   flex-direction: column;
   position: relative;
   max-width: 1450px;
-  min-width: 578px;
+  min-width: 575px;
   min-height: 100%;
   margin: 0 auto;
   margin-top: 0px;
@@ -49,9 +49,3 @@ $Roboto: Roboto Mono, monospace;
     color: #682ae9;
   }
 }
-
-// @media screen and (max-width: 1600px) {
-//   .Main-pages {
-//     max-width: 1250px;
-//   }
-// }

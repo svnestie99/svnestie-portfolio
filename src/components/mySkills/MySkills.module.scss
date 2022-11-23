@@ -52,6 +52,12 @@ $purple: #682ae9;
       font-size: 14px;
       font-weight: 700;
       color: #fff;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     .notification_block {
@@ -238,14 +244,13 @@ $purple: #682ae9;
   }
 }
 
-
 @media screen and (max-width: 1050px) {
-  .skills_container  .skills_row span {
+  .skills_container .skills_row span {
     font-size: 85px;
   }
 }
 @media screen and (max-width: 860px) {
-  .skills_container  .skills_row span  {
+  .skills_container .skills_row span {
     font-size: 65px;
     line-height: 50px;
   }
@@ -259,7 +264,7 @@ $purple: #682ae9;
   }
 }
 @media screen and (max-width: 680px) {
-  .skills_container  .skills_row span  {
+  .skills_container .skills_row span {
     font-size: 50px;
   }
 }

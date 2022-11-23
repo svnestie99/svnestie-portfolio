@@ -7,25 +7,11 @@ $purple: #682ae9;
   position: relative;
   max-width: 1450px;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
 
   align-items: center;
   padding: 50px 50px;
 }
 
-// .int {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   width: 150%;
-//   height: 150%;
-//   background-color: #0d0d0d;
-//   animation: scale 1.8s forwards;
-//   animation-delay: 2s;
-//   z-index: 111111;
-// }
 .intro_block {
   display: flex;
   flex-direction: column;

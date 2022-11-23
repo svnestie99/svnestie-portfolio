@@ -242,9 +242,9 @@ $purple: #682ae9;
   width: 100%;
   height: 80px;
   margin-top: -2px;
-  padding: 10px;
   border: 2px solid #fff;
   animation: showY 1.2s forwards;
+
   &:nth-child(1) {
     animation-delay: 0.4s;
   }
@@ -261,6 +261,7 @@ $purple: #682ae9;
     font-weight: 700;
     color: $purple;
     width: 5%;
+    padding: 0px 10px;
   }
   .project_list_name {
     display: flex;
@@ -271,13 +272,14 @@ $purple: #682ae9;
     letter-spacing: 1.2px;
     color: #fff;
     width: 20%;
+    padding: 0px 10px;
   }
   .project_list_type {
     font-family: $Roboto;
     font-weight: 700;
     font-size: 12px;
     color: gray;
-    width: 20%;
+    width: 10%;
   }
   .project_list_tools {
     display: flex;
@@ -285,8 +287,10 @@ $purple: #682ae9;
     font-weight: 700;
     font-family: $Roboto;
     color: #fff;
-    width: 20%;
+    width: 30%;
     margin-right: 50px;
+    padding: 0px 5px;
+
     .tool {
       padding: 10px;
       color: #fff;
@@ -397,10 +401,10 @@ $purple: #682ae9;
     font-size: 65px;
     line-height: 50px;
   }
-  .projects_container .row  {
+  .projects_container .row {
     font-size: 12px;
   }
-  .projects_container .row .row_links a{
+  .projects_container .row .row_links a {
     font-size: 12px;
   }
 }

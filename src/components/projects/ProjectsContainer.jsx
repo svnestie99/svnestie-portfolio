@@ -16,8 +16,16 @@ export const ProjectsContainerComponent = (props) => {
       github: 'https://github.com/svnestie99/TWD-comics',
     },
     {
+      name: 'TWDcomics',
+      type: 'App',
+      image: twd,
+      link: '#',
+      tools: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/svnestie99/TWD-comics',
+    },
+    {
       name: 'Valorant',
-      type: 'Template(Concept)',
+      type: 'Template',
       image: vlrnt,
       link: 'https://svnestie99.github.io/Valorant-Agents-page/',
       tools: ['HTML', 'CSS', 'SCSS'],

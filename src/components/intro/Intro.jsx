@@ -5,7 +5,6 @@ export const Intro = (props) => {
   return (
     <div className={styles.intro_container}>
       <HeaderContainerComponent setActive={props.setActive} />
-      {/* <div className={styles.int}></div> */}
       <div className={styles.intro_block}>
         <div className={styles.intro_block_item}>
           <div className={styles.introduce}>
