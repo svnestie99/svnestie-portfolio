@@ -1,6 +1,7 @@
 import { Projects } from './Projects';
 import styles from './Projects.module.scss';
 import twd from '../../assets/images/projects/LuAQQ59muck.jpg';
+import kbrd from '../../assets/images/projects/zZB9Fexzsr0.jpg';
 import vlrnt from '../../assets/images/projects/IpvS3_aNgUg.jpg';
 import wdr from '../../assets/images/projects/7rJk3PY9zUw.jpg';
 import { BsGithub } from 'react-icons/bs';
@@ -16,12 +17,12 @@ export const ProjectsContainerComponent = (props) => {
       github: 'https://github.com/svnestie99/TWD-comics',
     },
     {
-      name: 'TWDcomics',
+      name: 'Virtual Keyboard',
       type: 'App',
-      image: twd,
-      link: '#',
+      image: kbrd,
+      link: 'https://svnestie99.github.io/Virtual-Keyboard/',
       tools: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/svnestie99/TWD-comics',
+      github: 'https://github.com/svnestie99/Virtual-Keyboard',
     },
     {
       name: 'Valorant',
