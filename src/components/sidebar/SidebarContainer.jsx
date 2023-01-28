@@ -2,10 +2,10 @@ import { Sidebar } from './Sidebar';
 
 export const SidebarContainerComponent = () => {
   const arrOfLinks = [
-    { href: '#home', name: 'home', topY: 0 },
-    { href: '#about-me', name: 'about me', topY: 1169 },
-    { href: '#my-skills', name: 'skills', topY: 2338 },
-    { href: '#projects', name: 'projects', topY: 3507 },
+    { href: '#home', name: 'home'},
+    { href: '#about-me', name: 'about me'},
+    { href: '#my-skills', name: 'skills'},
+    { href: '#projects', name: 'projects'},
   ];
   return (
     <Sidebar

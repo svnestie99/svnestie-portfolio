@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -r https://github.com/svnestie99/svnestie-portfolio",
     "predeploy": "npm run build"
   },
   "eslintConfig": {

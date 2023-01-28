@@ -31,19 +31,19 @@ $purple: #682ae9;
     a {
       &:nth-child(1) {
         transform: scale(1);
-        transition-delay: 0.5s;
+        transition-delay: 0.2s;
       }
       &:nth-child(2) {
         transform: scale(1);
-        transition-delay: 1s;
+        transition-delay: 0.4s;
       }
       &:nth-child(3) {
         transform: scale(1);
-        transition-delay: 1.5s;
+        transition-delay: 0.6s;
       }
       &:nth-child(4) {
         transform: scale(1);
-        transition-delay: 2s;
+        transition-delay: 0.8s;
       }
     }
   }
