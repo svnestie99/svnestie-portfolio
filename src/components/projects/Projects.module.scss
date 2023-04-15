@@ -257,6 +257,9 @@ $purple: #682ae9;
   &:nth-child(4) {
     animation-delay: 1s;
   }
+  &:nth-child(5) {
+    animation-delay: 1.2s;
+  }
 
   .project_list_number {
     font-family: $Roboto;
